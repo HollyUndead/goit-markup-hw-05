@@ -37,7 +37,7 @@
             <section class="hero-section section">
                 <div class="container hero-container">
                     <h1 class="hero-title">Ефективні рішення для<br> вашого бізнесу</h1>
-                    <button class="make-order" type="button">Замовити послугу</button>
+                    <button class="make-order" type="button" data-modal-open="">Замовити послугу</button>
                 </div>
             </section>
 
@@ -100,9 +100,27 @@
                 <div class="container">
                     <h2 class="section-title">Чим ми займаємося</h2>
                     <ul class="portfolio-img">
-                        <li><img src="./images/image1.jpg" alt="Робота за компьютером" width="370px" height="294px"></li>
-                        <li><img src="./images/image2.jpg" alt="Робота за компьютером та телефоном" width="370px" height="294px"></li>
-                        <li><img src="./images/image3.jpg" alt="Робота за планшетом" width="370px" height="294px"></li>
+                        <li><img src="./images/image1.jpg" alt="Робота за компьютером" width="370px" height="294px">
+                            <div class="container-for-portfolio-text">
+                                <span class="portfolio-text">
+                                    Десктопні додатки
+                                </span>
+                            </div>
+                        </li>
+                        <li><img src="./images/image2.jpg" alt="Робота за компьютером та телефоном" width="370px" height="294px">
+                            <div class="container-for-portfolio-text">
+                                <span class="portfolio-text">
+                                    Мобільні додатки
+                                </span>
+                            </div>
+                        </li>
+                        <li><img src="./images/image3.jpg" alt="Робота за планшетом" width="370px" height="294px">
+                            <div class="container-for-portfolio-text">
+                                <span class="portfolio-text">
+                                    Дізайнерські рішення
+                                </span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -350,5 +368,16 @@
             </div>
         </footer>
 
+        <div class="backdrop is-hidden" data-modal="">
+            <div class="modal">
+                <button type="button" class="modal-close" data-modal-close="">
+                    <svg class="modal-close-svg">
+                        <use href="./images/icons.svg#icon-Vector"></use>
+                    </svg>
+            </button>
+            </div>
+        </div>
+
+        <script src="./js/modal.js"></script>
     </body>
 </html>
